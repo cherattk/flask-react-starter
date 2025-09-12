@@ -1,0 +1,38 @@
+.sidebar {
+  width:280px;
+}
+
+.sidebar .nav-link:not(.active):hover {
+  opacity: 0.9;
+  background-color: #e9ecef;
+}
+
+.table {
+  --bs-table-striped-bg: rgba(0, 0, 0, 0.02);
+  --bs-table-hover-bg: rgba(0, 0, 0, 0.03);
+}
+
+.table thead th {
+  background-color: var(--bs-primary);
+  color: white;
+  vertical-align: middle;
+  border-bottom: none;
+  padding: 12px 15px;
+}
+
+.table tbody tr {
+  transition: all 0.2s ease-in-out;
+}
+
+.table tbody tr:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.table td,
+.table th {
+  padding: 12px 15px;
+  vertical-align: middle;
+  border-color: #e9ecef;
+}
