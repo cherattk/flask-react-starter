@@ -1,32 +1,32 @@
 ### Flask-React Starter Project
 
+##### Install Backend dependencies
 ```bash
-# Install Backend dependencies
 pip install -r requirements.txt
 ```
 
+##### Install Frontend dependencies
 ```bash
-# Install Frontend dependencies
 npm install [--save | --save-dev]
 ```
 
+##### watch Frontend
 ```bash
-# watch Frontend
 npm run watch-js
 ```
 
+##### build Frontend
 ```bash
-# build Frontend
 npm run build
 ```
 
+##### run all pyton tests
 ```bash
-# run all tests
 pytest
 ```
 
+##### run app
 ```bash
-# run app
 py run.py
 ```
 

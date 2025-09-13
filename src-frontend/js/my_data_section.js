@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function MyDataComponent() {
+export default function MyDataSection() {
   
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -41,8 +41,17 @@ export default function MyDataComponent() {
 
   return (
     <div>
-      <h1>Data</h1>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      <h3>Data Section</h3>
+      <table className='table'>
+        <thead>
+         <tr><th>ID</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+          {data.map(item => (
+            <tr key={item.id}><td>{item.id}</td><td>{item.description}</td></tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };

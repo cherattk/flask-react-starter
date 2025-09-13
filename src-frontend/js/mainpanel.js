@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import HomeContent from './home.js';
-import MyDataContent from './my_data.js';
+import HomeSection from './home_section.js';
+import MyDataSection from './my_data_section.js';
 
 
 function MainPanel({ activeSection }) {
@@ -8,11 +8,11 @@ function MainPanel({ activeSection }) {
   const renderContent = () => {
     switch (activeSection) {
       case 'section-home':
-        return <HomeContent />;
+        return <HomeSection />;
       case 'section-my-data':
-        return <MyDataContent/>;
+        return <MyDataSection/>;
       default:
-        return <HomeContent/>; // Fallback
+        return <HomeSection/>; // Fallback
     }
   };
 
