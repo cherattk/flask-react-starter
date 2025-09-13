@@ -12,7 +12,7 @@ class MyData():
         return self._description
     
     @description.setter
-    def email(self , value):
+    def description(self , value):
         self._description = value
 
     def to_dict(self):
